@@ -1,0 +1,43 @@
+.global-nav {
+	display: flex;
+	max-width: 980px;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	list-style-type: none;
+}
+
+nav li {
+	/*padding-top: 10px;*/
+	height: 44px;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+
+.head-image {
+	position: relative;
+}
+
+/*section .head-image a img{
+	position: absolute;
+	left: calc(50% - 1280px);
+	width: 2560px;
+	height: 626px;
+}*/
+.head-image {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.head-image a img{
+	/*flex: none;*/
+}
+
