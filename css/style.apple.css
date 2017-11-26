@@ -1,13 +1,28 @@
-.global-nav {
-	display: flex;
-	max-width: 980px;
-}
+
+/*body {
+	height: 100%;
+}*/
 
 nav {
-	background-color: rgba(0, 0, 0, 0.5);
-	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.8);
 	list-style-type: none;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+	width: 100%;
 }
+
+.global-nav {
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.global-nav img:hover {
+	opacity: 0.5;
+}
+
 
 nav li {
 	/*padding-top: 10px;*/
@@ -21,8 +36,36 @@ nav a {
 	text-align: center;
 }
 
+section {
+	position: relative;
+}
+
+.title {
+	width: 100%;
+	position: absolute;
+	margin-top: 60px;
+	z-index: 1;
+	color: white;
+	text-align: center;
+	top: 50px;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica", sans-serif;
+}
+
+.title h2 {
+	font-size: 56px;
+	margin: 0px;
+}
+
+.title h3 {
+	margin: 0px;
+	font-size: 35px;
+	font-weight: lighter;
+	
+}
+
 .head-image {
 	position: relative;
+	top: 0px;
 }
 
 /*section .head-image a img{
@@ -37,7 +80,160 @@ nav a {
 	overflow: hidden;
 }
 
-.head-image a img{
-	/*flex: none;*/
+main {
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica", sans-serif;
+	margin-top: -5px;
 }
 
+main ul {
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 7px;
+}
+
+main ul li {
+	list-style-type: none;
+	width: 49%;
+	background-color: #fafafa;
+	margin: 5px;
+}
+
+main ul li section .sub-title {
+	width: 100%;
+	font-size: 40px;
+	text-align: center;
+}
+
+main ul li section .sub-title h3 {
+	margin: 52px 0px 0px 0px;
+}
+
+main ul li section .sub-title img {
+	margin-top: 52px;
+}
+
+main ul li section .sub-title h5 {
+	margin: 0px;
+	font-weight: lighter;
+	font-size: 21px;
+}
+
+main ul li section .sub-title h4 {
+	margin: 52px 0px 0px 0px;
+}
+
+main ul li section .promo {
+	text-align: center;
+	margin-top: 10px;
+}
+
+main ul li section .promo-watch {
+	margin-top: 60px;
+}
+
+main ul li section .promo-iphone-x {
+	margin-top: 25px;
+}
+
+main ul li section .promo-iphone-8 img {
+	position: relative;
+	top: 20px;
+}
+
+main ul li section .promo-ipad img {
+	position: relative;
+	top: 117px;
+}
+
+main ul li section .promo-imac img {
+	margin: 20px 0px 65px 0px;
+}
+
+main ul .iphone-8 {
+	background-color: rgb(250,239,234);
+}
+
+footer {
+	background-color: #f2f2f2;
+	margin: 10px 0px 0px 0px;
+}
+
+footer section {
+	max-width: 980px;
+	margin: 0px auto;
+
+}
+
+footer section main {
+	display: flex;
+	justify-content: center;
+}
+
+footer section main section {
+	width: 20%;
+	margin: 30px 0px;
+}
+
+footer section main ul {
+	flex-direction: column;
+}
+
+footer section main ul li {
+	width: auto;
+	font-size: 12px;
+	background-color: #f2f2f2;
+}
+
+footer section main ul .products-title {
+	font-weight: bold;
+	color: #000418;
+}
+
+footer section footer {
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 12px;
+	font-weight: lighter;
+	padding: 10px 0px;
+}
+
+footer section footer a {
+	text-decoration: none;
+	color: #007cca;
+}
+
+footer section footer a:hover {
+	text-decoration: underline;
+}
+
+footer footer {
+	display: flex;
+	max-width: 980px;
+	margin: 0px auto;
+	font-size: 12px;
+	font-weight: lighter;
+	padding: 10px 0px 20px 0px;
+}
+
+footer footer .legal-link ul {
+	display: flex;
+	margin: 0px 0px;
+}
+
+footer footer .legal-link ul li {
+	list-style-type: none;
+	padding: 0px 10px;
+	border-left: 1px solid #d6d6d6;
+}
+
+footer footer .ensign {
+	flex-grow: 1;
+	text-align: right;
+}
+
+footer footer .ensign span {
+	position: relative;
+	top: -5px;
+}
